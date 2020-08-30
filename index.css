@@ -1,0 +1,106 @@
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  background-color:#d5dde8;
+}
+
+a.nav-link:hover{
+  color: black;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+}
+
+img {
+  border-radius: 5px;
+  cursor: zoom-in;
+  transition: 0.3s;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 8rem;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+  /*cursor:zoom-out;*/
+}
+
+.image {
+  width:15rem;
+  height:20rem;
+  object-fit:cover;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  object-fit:contain;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+  display: block;
+  padding-top: 2rem;
+  text-align: center;
+  color:white;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, .caption {
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
