@@ -44,21 +44,22 @@ img:hover {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-
+  cursor: pointer;
   /*cursor:zoom-out;*/
 }
 
 .image {
   width:15rem;
   height:20rem;
+  padding-bottom:1rem;
   object-fit:cover;
 }
 
 .modal-content {
   margin: auto;
   display: block;
-  object-fit:contain;
   max-width: 700px;
+  cursor: crosshair;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
